@@ -102,7 +102,8 @@
   		firefox
   		krita
   		git
-  		alacritty		
+  		alacritty
+  		eclipses.eclipse-java		
   	];
   	programs.home-manager.enable = true;
   	home.stateVersion = "26.05";  
