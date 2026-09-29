@@ -83,6 +83,8 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   programs.zsh.enable = true;
+
+  environment.plasma6.excludePackages = [ pkgs.kdePackages.konsole ];
   
   users.users."coddo" = {
     isNormalUser = true;
