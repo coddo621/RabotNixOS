@@ -99,7 +99,8 @@
   		micro-with-wl-clipboard
   		firefox
   		krita
-  		git		
+  		git
+  		alacritty		
   	];
   	programs.home-manager.enable = true;
   	home.stateVersion = "26.05";  
