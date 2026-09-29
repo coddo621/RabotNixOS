@@ -82,9 +82,12 @@
   # services.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.zsh.enable = true;
+  
   users.users."coddo" = {
     isNormalUser = true;
     description = "Coddo";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
@@ -96,8 +99,7 @@
   		micro-with-wl-clipboard
   		firefox
   		krita
-  		git
-  		zsh  		
+  		git		
   	];
   	programs.home-manager.enable = true;
   	home.stateVersion = "26.05";  
@@ -108,6 +110,10 @@
   	};
 
   	programs.firefox = {
+  		enable = true;
+  	};
+
+  	programs.zsh = {
   		enable = true;
   	};
   };
