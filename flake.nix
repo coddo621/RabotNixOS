@@ -8,11 +8,17 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    areofyl-fetch.url = "github:areofyl/fetch";
   };
 
-  outputs = { nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations.rabotnik = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
+
+      specialArgs = {
+        inherit inputs;
+      };
 
       modules = [
         ./hosts/rabotnik/configuration.nix
@@ -20,7 +26,7 @@
         home-manager.nixosModules.home-manager
 
         {
-        	home-manager.users.coddo = import ./home/coddo.nix;
+          home-manager.users.coddo = import ./home/coddo.nix;
         }
       ];
     };

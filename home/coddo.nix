@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.username = "coddo";
@@ -40,6 +40,30 @@
         "sudo"
         "docker"
       ];
+
+      shellAliases = {
+      	rebuild = "bash $HOME/.config/nixos/rebuild.sh";
+      	garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
+      }
     };
   };
+
+  imports = [
+      inputs.areofyl-fetch.homeManagerModules.default
+    ];
+  
+    programs.fetch = {
+      enable = true;
+  
+      labelColor = "red";
+  
+      info = [
+        "os"
+        "kernel"
+        "uptime"
+      ];
+  
+      speed = 1.0;
+      spin = "xy";
+    };
 }
