@@ -20,7 +20,6 @@
     ani-cli
     android-tools
     ungoogled-chromium
-    fetch
   ];
 
   programs.home-manager.enable = true;
