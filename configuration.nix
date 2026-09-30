@@ -103,7 +103,13 @@
   		krita
   		git
   		alacritty
-  		eclipses.eclipse-java		
+  		eclipses.eclipse-java
+  		arduino-ide
+  		btop
+  		ani-cli
+  		android-tools
+  		ungoogled-chromium
+  		fetch
   	];
   	programs.home-manager.enable = true;
   	home.stateVersion = "26.05";  

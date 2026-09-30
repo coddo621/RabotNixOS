@@ -1,24 +1,28 @@
 {
-  description = "NixOS Flake Configuration with Home Manager";
+  description = "Main Robotic Šlave (MRŠ)";
 
   inputs = {
-  	nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 
-  	home-manager = {
-  	  url = "github:nix-community/home-manager/release-26.05";
-  	  inputs.nixpkgs.follows = "nixpkgs";
-  	};
+    home-manager = {
+      url = "github:nix-community/home-manager/release-26.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations = {
-      rabotnik = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
-          home-manager.nixosModules.home-manager
-        ];
-      };
+  outputs = { nixpkgs, home-manager, ... }: {
+    nixosConfigurations.rabotnik = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+
+      modules = [
+        ./hosts/rabotnik/configuration.nix
+
+        home-manager.nixosModules.home-manager
+
+        {
+        	home-manager.users.coddo = import ./home/coddo.nix;
+        }
+      ];
     };
   };
 }
