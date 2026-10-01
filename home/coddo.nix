@@ -31,6 +31,11 @@
   programs.zsh = {
     enable = true;
 
+    shellAliases = {
+      rebuild = "bash $HOME/.config/nixos/rebuild.sh";
+      garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
+    };
+	
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
@@ -40,11 +45,6 @@
         "sudo"
         "docker"
       ];
-
-      shellAliases = {
-      	rebuild = "bash $HOME/.config/nixos/rebuild.sh";
-      	garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
-      }
     };
   };
 

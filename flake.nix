@@ -26,6 +26,10 @@
         home-manager.nixosModules.home-manager
 
         {
+          home-manager.extraSpecialArgs = {
+          	inherit inputs;
+          };
+          
           home-manager.users.coddo = import ./home/coddo.nix;
         }
       ];
