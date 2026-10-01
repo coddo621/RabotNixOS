@@ -22,6 +22,7 @@
     ungoogled-chromium
     mpv
     fzf
+    sublime4
   ];
 
   programs.home-manager.enable = true;
