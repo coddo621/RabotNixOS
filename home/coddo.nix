@@ -24,6 +24,7 @@
     fzf
     sublime4
     gcc
+    vscode
   ];
 
   programs.home-manager.enable = true;
