@@ -21,6 +21,7 @@
     android-tools
     ungoogled-chromium
     mpv
+    fzf
   ];
 
   programs.home-manager.enable = true;
