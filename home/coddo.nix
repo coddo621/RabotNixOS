@@ -23,6 +23,7 @@
     mpv
     fzf
     sublime4
+    gcc
   ];
 
   programs.home-manager.enable = true;
