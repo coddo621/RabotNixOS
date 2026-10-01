@@ -20,6 +20,7 @@
     ani-cli
     android-tools
     ungoogled-chromium
+    mpv
   ];
 
   programs.home-manager.enable = true;
