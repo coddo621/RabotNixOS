@@ -28,6 +28,20 @@
     hyprland
   ];
 
+  wayland.windowManager.hyprland = {
+    enable = true;
+    
+    settings = {
+      "$terminal" = "alacritty";
+
+      bind = [ "SUPER, RETURN, exec, $terminal"];
+
+      decoration = {
+        rounding = 10;
+      };
+    };
+  };
+
   programs.home-manager.enable = true;
 
   programs.vesktop.enable = true;
