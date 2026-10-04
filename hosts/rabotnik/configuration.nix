@@ -79,6 +79,11 @@
     "nix-command"
     "flakes"
   ];
+  
+  #nix.settings.auto-optimize-store = true;
+  nix.gc.automatic = true;
+  nix.gc.options = "--delete-older-than 14d";
+  system.autoUpgrade.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ "openssl-1.1.1w"];

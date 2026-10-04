@@ -25,6 +25,7 @@
     sublime4
     gcc
     vscode
+    hyprland
   ];
 
   programs.home-manager.enable = true;
