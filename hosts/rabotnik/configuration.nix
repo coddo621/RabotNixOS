@@ -36,8 +36,6 @@
   };
 
   services.xserver.enable = false;
-
-  services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
@@ -84,6 +82,17 @@
   nix.gc.automatic = true;
   nix.gc.options = "--delete-older-than 14d";
   system.autoUpgrade.enable = true;
+
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
+
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+  };
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ "openssl-1.1.1w"];

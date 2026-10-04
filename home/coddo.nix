@@ -25,7 +25,6 @@
     sublime4
     gcc
     vscode
-    hyprland
   ];
 
   wayland.windowManager.hyprland = {
