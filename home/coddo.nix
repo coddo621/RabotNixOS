@@ -59,7 +59,7 @@
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + R\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi\")")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi --show drun\")")
           ];
         }
       ];
