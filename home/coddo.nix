@@ -29,28 +29,27 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-
+    configType = "lua";
+    
     settings = {
       mod = {
         _var = "SUPER";
       };
 
-      config = {
-        general = {
-          gaps_in = 5;
-          gaps_out = 20;
-          border_size = 2;
-        };
+      general = {
+        gaps_in = 5;
+        gaps_out = 20;
+        border_size = 2;
+      };
 
-        decoration = {
-          rounding = 10;
-        };
+      decoration = {
+        rounding = 10;
       };
       
       bind = [
         {
           _args = [
-            "SUPER + RETURN"
+            (lib.generators.mkLuaInline "mod .. \" + RETURN\"")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"alacritty\")")
           ];
         }
