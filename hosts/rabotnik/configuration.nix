@@ -89,10 +89,12 @@
     xwayland.enable = true;
   };
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-  };
+  services.displayManager.sddm.enable = false;
+  services.displayManager.ly.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    ly
+  ];
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ "openssl-1.1.1w"];
