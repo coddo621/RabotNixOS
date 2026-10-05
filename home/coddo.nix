@@ -51,14 +51,14 @@
       bind = [
         {
           _args = [
-            (lib.generators.mkLuaInline "mod .. \" + RETURN\"")
+            (lib.generators.mkLuaInline "mod .. \" + Q\"")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"alacritty\")")
           ];
         }
 
         {
           _args = [
-            (lib.generators.mkLuaInline "mod .. 'r'")
+            (lib.generators.mkLuaInline "mod .. \" + R\"")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi\")")
           ];
         }
