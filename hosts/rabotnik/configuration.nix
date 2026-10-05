@@ -89,14 +89,14 @@
     xwayland.enable = true;
   };
 
-  services.displayManager.sddm.enable = false;
-  services.displayManager.ly = {
-    enable = true;
-    settings = {
-      animation = "matrix"; # Options: matrix, doom, colormix, fire, none
-      bigclock = true;
-    };
-  };
+  services.displayManager.sddm.enable = true;
+  #services.displayManager.ly = {
+  #  enable = true;
+  #  settings = {
+  #    animation = "matrix"; # Options: matrix, doom, colormix, fire, none
+  #    bigclock = true;
+  #  };
+  #};
 
   environment.systemPackages = with pkgs; [
     ly
