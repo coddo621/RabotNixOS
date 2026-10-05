@@ -36,6 +36,7 @@
       mod = {
         _var = "SUPER";
       };
+
       config = {
         general = {
           gaps_in = 5;
@@ -45,6 +46,10 @@
 
         decoration = {
           rounding = 10;
+        };
+
+        input = {
+          kb_layout = "hr";
         };
       };
       
