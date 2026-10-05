@@ -26,7 +26,12 @@
     gcc
     vscode
     wofi
+    waybar
   ];
+
+  programs.waybar = {
+    enable = true;
+  };
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -36,6 +41,8 @@
       mod = {
         _var = "SUPER";
       };
+
+      exec_cmd = "waybar";
 
       monitor = {
         output = "eDP-1";
