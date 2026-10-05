@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, lib, ... }:
 
 {
   home.username = "coddo";
@@ -41,7 +41,7 @@
         {
           _args = [
             "SUPER + RETURN"
-            "exec, alacritty"
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"alacritty\")")
           ];
         }
       ];
