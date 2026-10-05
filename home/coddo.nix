@@ -58,7 +58,7 @@
 
         {
           _args = [
-            (lib.generators.mkLuaInline "mod .. \" + r\"")
+            (lib.generators.mkLuaInline "mod .. 'r'")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi\")")
           ];
         }
