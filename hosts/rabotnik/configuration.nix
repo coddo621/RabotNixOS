@@ -89,8 +89,8 @@
     xwayland.enable = true;
   };
 
-  services.displayManager.sddm.enable = false;
-  services.displayManager.ly.enable = true;
+  services.displayManager.sddm.enable = true;
+  services.displayManager.ly.enable = false;
 
   environment.systemPackages = with pkgs; [
     ly
