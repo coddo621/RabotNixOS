@@ -29,9 +29,22 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
-    
+
     settings = {
-      bind = [ "SUPER+RETURN, exec, alacritty"];
+      general = {
+        gaps_in = 5;
+        gaps_out = 20;
+        border_size = 2;
+      };
+
+      bind = [
+        {
+          _args = [
+            "SUPER + RETURN"
+            "exec, alacritty"
+          ];
+        }
+      ];
 
       decoration = {
         rounding = 10;
