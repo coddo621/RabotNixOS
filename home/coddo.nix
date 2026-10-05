@@ -31,7 +31,7 @@
     enable = true;
     
     settings = {
-      bind = [ "SUPER, RETURN, exec, alacritty"];
+      bind = [ "SUPER+RETURN, exec, alacritty"];
 
       decoration = {
         rounding = 10;
