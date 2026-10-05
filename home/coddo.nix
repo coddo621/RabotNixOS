@@ -31,6 +31,10 @@
     enable = true;
 
     settings = {
+      mod = {
+        _var = "SUPER";
+      };
+
       config = {
         general = {
           gaps_in = 5;
