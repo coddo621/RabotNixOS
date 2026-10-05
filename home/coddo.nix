@@ -31,9 +31,7 @@
     enable = true;
     
     settings = {
-      "$terminal" = "alacritty";
-
-      bind = [ "SUPER, RETURN, exec, $terminal"];
+      bind = [ "SUPER, RETURN, exec, alacritty"];
 
       decoration = {
         rounding = 10;
