@@ -31,12 +31,18 @@
     enable = true;
 
     settings = {
-      general = {
-        gaps_in = 5;
-        gaps_out = 20;
-        border_size = 2;
-      };
+      config = {
+        general = {
+          gaps_in = 5;
+          gaps_out = 20;
+          border_size = 2;
+        };
 
+        decoration = {
+          rounding = 10;
+        };
+      };
+      
       bind = [
         {
           _args = [
@@ -45,10 +51,6 @@
           ];
         }
       ];
-
-      decoration = {
-        rounding = 10;
-      };
     };
   };
 
