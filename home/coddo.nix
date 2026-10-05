@@ -25,6 +25,7 @@
     sublime4
     gcc
     vscode
+    wofi
   ];
 
   wayland.windowManager.hyprland = {
@@ -52,6 +53,13 @@
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + RETURN\"")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"alacritty\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + r\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi\")")
           ];
         }
       ];
