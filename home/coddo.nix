@@ -92,7 +92,7 @@
         {
           _args = [
             (lib.generators.mkLuaInline "\"ALT + F4\"")
-            (lib.generators.mkLuaInline "hl.exec_cmd(\"killactive\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.close()")
           ];
         }
       ];
