@@ -7,7 +7,6 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
-    kdePackages.kate
     vesktop
     micro-with-wl-clipboard
     firefox

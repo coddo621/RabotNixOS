@@ -36,7 +36,6 @@
   };
 
   services.xserver.enable = false;
-  services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
     layout = "hr";
@@ -58,10 +57,6 @@
   security.rtkit.enable = true;
 
   programs.zsh.enable = true;
-
-  environment.plasma6.excludePackages = [
-    pkgs.kdePackages.konsole
-  ];
 
   users.users.coddo = {
     isNormalUser = true;
@@ -89,14 +84,13 @@
     xwayland.enable = true;
   };
 
-  services.displayManager.sddm.enable = true;
-  #services.displayManager.ly = {
-  #  enable = true;
-  #  settings = {
-  #    animation = "matrix"; # Options: matrix, doom, colormix, fire, none
-  #    bigclock = true;
-  #  };
-  #};
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      animation = "matrix"; # Options: matrix, doom, colormix, fire, none
+      bigclock = true;
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     ly
