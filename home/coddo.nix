@@ -91,7 +91,7 @@
 
         {
           _args = [
-            (lib.generators.mkLuaInline "ALT .. \" + F4\"")
+            (lib.generators.mkLuaInline "ALT + F4\"")
             (lib.generators.mkLuaInline "hl.dsp.window.forcekillactive({})")
           ];
         }
