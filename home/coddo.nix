@@ -37,12 +37,16 @@
     enable = true;
     configType = "lua";
     
+    extraConfig = ''
+      hl.on("hyprland.start", function()
+        hl.exec_cmd("waybar")
+      end)
+    '';
+
     settings = {
       mod = {
         _var = "SUPER";
       };
-
-      exec_cmd = "waybar";
 
       monitor = {
         output = "eDP-1";
