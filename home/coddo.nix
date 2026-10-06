@@ -88,6 +88,13 @@
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi --show drun\")")
           ];
         }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "ALT .. \" + F4\"")
+            (lib.generators.mkLuaInline "hl.dsp.window.forcekillactive({})")
+          ];
+        }
       ];
     };
   };
