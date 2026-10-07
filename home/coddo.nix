@@ -28,7 +28,6 @@
     waybar
     awww
     everforest-cursors
-    hyprshell
   ];
 
   services.hyprshell = {
@@ -59,7 +58,7 @@
       hl.on("hyprland.start", function()
         hl.exec_cmd("waybar")
         hl.exec_cmd("awww-daemon")
-        hl.exec_cmd("sleep 0.5; awww img $(find /home/coddo/Pictures/Wallpapers -type f | shuf -n 1) --transition-type random")
+        hl.exec_cmd("sleep 0.5; awww img $(find /home/coddo/Pictures/Wallpapers -type f | shuf -n 1) --transition-type random --transitio")
       end)
     '';
 
