@@ -30,10 +30,6 @@
     everforest-cursors
   ];
 
-  services.hyprshell = {
-    enable = true;
-  };
-
   home.pointerCursor = {
     enable = true;
 
