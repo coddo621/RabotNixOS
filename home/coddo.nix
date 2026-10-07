@@ -28,7 +28,12 @@
     waybar
     awww
     everforest-cursors
+    hyprshell
   ];
+
+  services.hyprshell = {
+    enable = true;
+  };
 
   home.pointerCursor = {
     enable = true;
