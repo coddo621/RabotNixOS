@@ -1,13 +1,17 @@
 { pkgs, inputs, lib, ... }:
 
 {
+  imports = [
+    ./vesktop.nix
+    inputs.areofyl-fetch.homeManagerModules.default
+  ];
+
   home.username = "coddo";
   home.homeDirectory = "/home/coddo";
 
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
-    vesktop
     micro-with-wl-clipboard
     firefox
     krita
@@ -29,16 +33,6 @@
     awww
     everforest-cursors
   ];
-
-  programs.vesktop = {
-    enable = true;
-    settings = {
-      discordBranch = "stable";
-      transparencyOption = "acrylic";
-    };
-    package = pkgs.vesktop;
-
-  };
 
   home.pointerCursor = {
     enable = true;
@@ -299,10 +293,6 @@
       ];
     };
   };
-
-  imports = [
-    inputs.areofyl-fetch.homeManagerModules.default
-  ];
 
   programs.fetch = {
     enable = true;
