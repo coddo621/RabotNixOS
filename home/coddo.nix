@@ -122,6 +122,76 @@
             (lib.generators.mkLuaInline "hl.dsp.window.close()")
           ];
         }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 1\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 1\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 2\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 2\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 3\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 3\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 4\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 4\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 5\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 5\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 6\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 6\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 7\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 7\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 8\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 8\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 9\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 9\")")
+          ];
+        }
+
+        {
+          _args = [
+            (lib.generators.mkLuaInline "mod .. \" + 0\"")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 10\")")
+          ];
+        }
       ];
     };
   };
