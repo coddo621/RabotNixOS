@@ -87,7 +87,7 @@
   services.displayManager.ly = {
     enable = true;
     settings = {
-      animation = "matrix"; # Options: matrix, doom, colormix, fire, none
+      animation = "doom"; # Options: matrix, doom, colormix, fire, none
       bigclock = true;
     };
   };

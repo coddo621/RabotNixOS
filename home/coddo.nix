@@ -30,6 +30,16 @@
     everforest-cursors
   ];
 
+  programs.vesktop = {
+    enable = true;
+    settings = {
+      discordBranch = "stable";
+      transparencyOption = "acrylic";
+    };
+    package = pkgs.vesktop;
+
+  };
+
   home.pointerCursor = {
     enable = true;
 
@@ -267,8 +277,6 @@
   };
 
   programs.home-manager.enable = true;
-
-  programs.vesktop.enable = true;
 
   programs.firefox.enable = true;
 
