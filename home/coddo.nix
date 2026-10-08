@@ -49,7 +49,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     configType = "lua";
-    
+
     extraConfig = ''
       hl.on("hyprland.start", function()
         hl.exec_cmd("waybar")
@@ -100,7 +100,7 @@
           kb_layout = "hr";
         };
       };
-      
+
       bind = [
         {
           _args = [
@@ -126,70 +126,70 @@
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 1\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 1\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 1 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 2\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 2\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 2 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 3\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 3\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 3 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 4\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 4\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 4 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 5\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 5\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 5 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 6\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 6\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 6 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 7\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 7\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 7 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 8\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 8\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 8 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 9\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 9\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 9 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + 0\"")
-            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch workspace 10\")")
+            (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = 10 })")
           ];
         }
       ];
@@ -209,7 +209,7 @@
       rebuild = "bash $HOME/.config/nixos/rebuild.sh";
       garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
     };
-	
+
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
@@ -223,21 +223,21 @@
   };
 
   imports = [
-      inputs.areofyl-fetch.homeManagerModules.default
+    inputs.areofyl-fetch.homeManagerModules.default
+  ];
+
+  programs.fetch = {
+    enable = true;
+
+    labelColor = "red";
+
+    info = [
+      "os"
+      "kernel"
+      "uptime"
     ];
-  
-    programs.fetch = {
-      enable = true;
-  
-      labelColor = "red";
-  
-      info = [
-        "os"
-        "kernel"
-        "uptime"
-      ];
-  
-      speed = 1.0;
-      spin = "xy";
-    };
+
+    speed = 1.0;
+    spin = "xy";
+  };
 }
