@@ -196,70 +196,70 @@
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 1\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 1 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 1\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 2\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 2 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 2\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 3\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 3 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 3\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 4\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 4 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 4\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 5\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 5 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 5\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 6\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 6 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 6\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 7\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 7 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 7\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 8\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 8 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 8\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 9\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 9 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 9\")")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 0\"")
-            (lib.generators.mkLuaInline "hl.dsp.move_to_workspace({ workspace = 10 })")
+            (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl dispatch movetoworkspace 10\")")
           ];
         }
       ];
