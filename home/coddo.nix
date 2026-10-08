@@ -196,70 +196,70 @@
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 1\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"1\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 1 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 2\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"2\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 2 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 3\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"3\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 3 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 4\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"4\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 4 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 5\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"5\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 5 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 6\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"6\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 6 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 7\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"7\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 7 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 8\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"8\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 8 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 9\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"9\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 9 })")
           ];
         }
 
         {
           _args = [
             (lib.generators.mkLuaInline "mod .. \" + SHIFT + 0\"")
-            (lib.generators.mkLuaInline "hl.dispatch(\"movetoworkspace\", \"10\")")
+            (lib.generators.mkLuaInline "hl.dsp.window.move({ workspace = 10 })")
           ];
         }
       ];
