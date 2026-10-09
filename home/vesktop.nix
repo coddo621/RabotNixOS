@@ -58,165 +58,229 @@
       };
       
       extraQuickCss = ''
-        /* =========================================================
-   THE KING IN YELLOW — DISCORD QUICK CSS
-   Palette: Tarnished Gold / Pallid Yellow / Black / Parchment
-   Style: Angular, square, theatrical, uncanny
-   ========================================================= */
+        /* ============================================================
+   THE KING IN YELLOW — COMPLETE DISCORD QUICK CSS
+   Vibe: The Yellow Sign / Forbidden Theatre / Decaying Royalty
+   Palette: Black, Ochre, Antique Gold, Pallid Yellow
+   Geometry: Square, Angular, Hard Edges
+   ============================================================ */
+
+/* ===================== COLOR SYSTEM ======================== */
 
 :root {
-  --kiy-black: #0b0a08;
-  --kiy-shadow: #12100b;
-  --kiy-panel: #19160e;
-  --kiy-panel-light: #211c10;
-  --kiy-gold: #c4a747;
-  --kiy-yellow: #e8d477;
-  --kiy-pale: #f0e6b8;
-  --kiy-muted: #8f8254;
-  --kiy-border: #67562b;
-  --kiy-red: #9d3d2e;
+  --kiy-black: #090805;
+  --kiy-void: #0e0c06;
+  --kiy-dark: #151207;
+  --kiy-panel: #201907;
+  --kiy-panel-hover: #30250b;
+  --kiy-ochre: #493713;
+  --kiy-gold-dark: #70551b;
+  --kiy-gold: #b59435;
+  --kiy-yellow: #e2ca64;
+  --kiy-pale: #f5e9ad;
+  --kiy-muted: #a0915b;
+  --kiy-red: #853d29;
 
-  --background-primary: var(--kiy-black);
-  --background-secondary: var(--kiy-shadow);
-  --background-secondary-alt: #100e09;
-  --background-tertiary: #080706;
-  --background-accent: #393019;
-  --background-floating: #15120b;
-  --background-modifier-hover: #292213;
-  --background-modifier-active: #3a2f17;
-  --background-modifier-selected: #332914;
-  --background-modifier-accent: #42351b;
+  /* Discord backgrounds */
+  --background-primary: #0e0c06 !important;
+  --background-secondary: #151207 !important;
+  --background-secondary-alt: #110e06 !important;
+  --background-tertiary: #090805 !important;
+  --background-floating: #1c1608 !important;
+  --background-accent: #493713 !important;
 
-  --text-normal: var(--kiy-pale);
-  --text-muted: var(--kiy-muted);
-  --text-link: var(--kiy-yellow);
-  --header-primary: var(--kiy-yellow);
-  --header-secondary: #a99a65;
-  --interactive-normal: #b6a56c;
-  --interactive-hover: var(--kiy-yellow);
-  --interactive-active: #fff0a3;
-  --interactive-muted: #51472b;
+  --background-modifier-hover: #30250b !important;
+  --background-modifier-active: #493713 !important;
+  --background-modifier-selected: #3b2d0c !important;
+  --background-modifier-accent: #70551b !important;
 
-  --brand-experiment: var(--kiy-gold);
-  --brand-experiment-560: #a78b35;
-  --brand-experiment-600: #806723;
-  --brand-experiment-100: #fff0a3;
+  /* Text */
+  --text-normal: #e8dca4 !important;
+  --text-muted: #a0915b !important;
+  --text-link: #e2ca64 !important;
+  --header-primary: #f5e9ad !important;
+  --header-secondary: #b8a56a !important;
 
-  --button-secondary-background: #292213;
-  --button-secondary-background-hover: #42351b;
-  --button-secondary-text: var(--kiy-pale);
+  /* Interactive states */
+  --interactive-normal: #b59435 !important;
+  --interactive-hover: #e2ca64 !important;
+  --interactive-active: #fff0a3 !important;
+  --interactive-muted: #64532a !important;
 
-  --input-background: #100e09;
-  --input-border: var(--kiy-border);
-  --focus-primary: var(--kiy-gold);
+  /* Brand and buttons */
+  --brand-experiment: #9d7925 !important;
+  --brand-experiment-100: #fff0a3 !important;
+  --brand-experiment-200: #f5e9ad !important;
+  --brand-experiment-360: #e2ca64 !important;
+  --brand-experiment-500: #b59435 !important;
+  --brand-experiment-560: #8c6b20 !important;
+  --brand-experiment-600: #70551b !important;
 
-  --radius-xs: 0px;
-  --radius-sm: 0px;
-  --radius-md: 0px;
-  --radius-lg: 0px;
-  --radius-xl: 0px;
-  --radius-2xs: 0px;
-  --radius-round: 0px;
+  --button-secondary-background: #30250b !important;
+  --button-secondary-background-hover: #493713 !important;
+  --button-secondary-text: #f5e9ad !important;
+
+  --input-background: #100d05 !important;
+  --input-border: #70551b !important;
+  --focus-primary: #e2ca64 !important;
+
+  /* Square geometry */
+  --radius-xs: 0px !important;
+  --radius-sm: 0px !important;
+  --radius-md: 0px !important;
+  --radius-lg: 0px !important;
+  --radius-xl: 0px !important;
+  --radius-2xs: 0px !important;
+  --radius-round: 0px !important;
 }
 
-/* --- SQUARE OFF THE ENTIRE INTERFACE --- */
+/* ===================== GLOBAL SHAPE ======================== */
 
 * {
   border-radius: 0px !important;
 }
 
-/* --- THE VOID: MAIN BACKGROUNDS --- */
+::selection {
+  background: #b59435 !important;
+  color: #090805 !important;
+}
+
+/* ===================== MAIN APPLICATION ==================== */
 
 body,
-.appMount__51fd7,
-.app__160d8,
-.bg__960e4,
+html,
+#app-mount,
+[class*="appMount"],
 [class*="app_"],
-[class*="chatContent_"],
-[class*="chat_"],
-[class*="container_"] {
-  background-color: var(--kiy-black);
+[class*="bg_"],
+[class*="layers_"],
+[class*="layer_"],
+[class*="base_"] {
+  background-color: var(--kiy-black) !important;
 }
 
-/* --- SERVERS: BLACK OBSIDIAN WITH GOLD ACCENTS --- */
+/* ===================== SERVER LIST ========================= */
 
-[class*="guilds_"] {
-  background: #080706 !important;
-  border-right: 1px solid var(--kiy-border);
+[class*="guilds_"],
+[class*="wrapper_"][class*="guilds"],
+nav[class*="guilds"] {
+  background: #090805 !important;
+  border-right: 2px solid var(--kiy-gold-dark) !important;
 }
 
-[class*="guild_"] {
-  transition: filter 160ms ease, transform 160ms ease;
+/* Server hover and selection */
+[class*="guilds_"] [class*="wrapper_"]:hover,
+[class*="guilds_"] [class*="wrapper_"][class*="selected"] {
+  background: var(--kiy-panel-hover) !important;
 }
 
-[class*="guild_"]:hover {
-  filter: brightness(1.35);
+/* Home / server icon containers */
+[class*="guilds_"] [class*="childWrapper_"],
+[class*="guilds_"] [class*="circleIconButton_"] {
+  background: #201907 !important;
+  color: var(--kiy-gold) !important;
 }
 
-[class*="selected_"] [class*="childWrapper_"],
-[class*="wrapper_"]:hover [class*="childWrapper_"] {
-  background: var(--kiy-panel-light) !important;
-  color: var(--kiy-yellow) !important;
+[class*="guilds_"] [class*="childWrapper_"]:hover,
+[class*="guilds_"] [class*="circleIconButton_"]:hover {
+  background: #493713 !important;
+  color: var(--kiy-pale) !important;
 }
 
-/* --- CHANNEL SIDEBAR: PARCHMENT IN THE SHADOWS --- */
-
-[class*="sidebar_"] {
-  background: #100e09 !important;
-  border-right: 1px solid var(--kiy-border);
+/* Selected server indicator */
+[class*="guilds_"] [class*="pill_"] span {
+  background: var(--kiy-yellow) !important;
 }
 
-[class*="sidebar_"] [class*="modeSelected_"],
-[class*="sidebar_"] [class*="selected_"] {
-  background: #302613 !important;
-  box-shadow: inset 3px 0 var(--kiy-gold);
+/* ===================== CHANNEL SIDEBAR ===================== */
+
+[class*="sidebar_"],
+[class*="sidebarList_"],
+[class*="privateChannels_"],
+[class*="scroller_"][class*="thin"] {
+  background-color: #151207 !important;
 }
 
-[class*="sidebar_"] [class*="link_"]:hover {
-  background: #211b0e !important;
+/* Server header */
+[class*="header_"][class*="guild"],
+[class*="header_"][class*="container_"] {
+  background: #201907 !important;
+  border-bottom: 1px solid var(--kiy-gold-dark) !important;
 }
 
-[class*="sidebar_"] [class*="name_"] {
-  letter-spacing: 0.3px;
-}
-
-[class*="containerDefault_"] [class*="icon_"] {
-  color: var(--kiy-muted);
-}
-
-/* --- TOP BAR: THE YELLOW SIGN --- */
-
-[class*="title_"],
-[class*="header_"] {
-  background-color: #0d0b08;
-  border-bottom: 1px solid var(--kiy-border);
-}
-
-[class*="title_"] [class*="children_"] {
-  color: var(--kiy-yellow);
-}
-
-/* --- CHAT: BLACK STAGE, GOLDEN TYPOGRAPHY --- */
-
-[class*="chatContent_"],
-[class*="messagesWrapper_"] {
-  background-color: #0b0a08 !important;
-}
-
-[class*="messageListItem_"] {
+/* Channel rows */
+[class*="containerDefault_"],
+[class*="containerDragAfter_"],
+[class*="containerDragBefore_"] {
   background: transparent !important;
 }
 
-[class*="messageListItem_"]:hover {
-  background: #17130b !important;
+[class*="containerDefault_"]:hover {
+  background: #30250b !important;
 }
 
-[class*="message_"] {
-  border-left: 2px solid transparent;
+[class*="modeSelected_"],
+[class*="selected_"][class*="container_"] {
+  background: #493713 !important;
+  box-shadow: inset 3px 0 0 var(--kiy-yellow) !important;
 }
 
+[class*="modeSelected_"] [class*="name_"],
+[class*="modeSelected_"] [class*="icon_"] {
+  color: var(--kiy-pale) !important;
+}
+
+[class*="modeUnread_"] [class*="name_"] {
+  color: var(--kiy-yellow) !important;
+}
+
+[class*="sidebar_"] [class*="name_"] {
+  color: #c0ae70;
+}
+
+[class*="sidebar_"] [class*="icon_"] {
+  color: var(--kiy-muted);
+}
+
+/* Channel category labels */
+[class*="wrapper_"] [class*="name_"],
+[class*="header_"] [class*="name_"] {
+  color: var(--kiy-gold) !important;
+}
+
+/* ===================== CHAT BACKGROUND ====================== */
+
+[class*="chat_"],
+[class*="chatContent_"],
+[class*="content_"],
+[class*="messagesWrapper_"],
+[class*="scrollerContent_"],
+[class*="form_"],
+[class*="chatContent_"] [class*="scroller_"] {
+  background-color: #0e0c06 !important;
+}
+
+/* Chat title bar */
+[class*="title_"],
+[class*="children_"][class*="header"],
+[class*="toolbar_"] {
+  background-color: #151207 !important;
+}
+
+[class*="title_"] {
+  border-bottom: 1px solid var(--kiy-gold-dark) !important;
+}
+
+/* Message hover */
+[class*="messageListItem_"]:hover,
 [class*="message_"]:hover {
-  border-left-color: #76602b;
+  background-color: #201907 !important;
+}
+
+/* Message text */
+[class*="markup_"] {
+  color: #e8dca4 !important;
+  line-height: 1.55;
 }
 
 [class*="username_"] {
@@ -224,124 +288,176 @@ body,
 }
 
 [class*="timestamp_"] {
-  color: #776c4a !important;
+  color: var(--kiy-muted) !important;
 }
 
-[class*="markup_"] {
-  color: #ddd2a7;
-  line-height: 1.55;
-}
-
+/* Reply and mention backgrounds */
 [class*="replying_"] {
-  background: #292111 !important;
+  background: #30250b !important;
 }
 
 [class*="mentioned_"] {
-  background: #3a2b10 !important;
+  background: #493713 !important;
 }
 
 [class*="mentioned_"]::before {
   background: var(--kiy-yellow) !important;
 }
 
-/* --- COMPOSER: THE BLACK BOOK --- */
-
-[class*="form_"] {
-  background: #0b0a08 !important;
+/* Message separators */
+[class*="divider_"] {
+  border-color: var(--kiy-gold-dark) !important;
 }
+
+/* ===================== MESSAGE COMPOSER ==================== */
 
 [class*="channelTextArea_"],
 [class*="scrollableContainer_"] {
-  background: #151209 !important;
-  border: 1px solid var(--kiy-border) !important;
-  box-shadow: inset 0 0 0 1px #000;
+  background: #201907 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
+  box-shadow: inset 0 0 0 1px #090805 !important;
 }
 
 [class*="channelTextArea_"]:focus-within,
 [class*="scrollableContainer_"]:focus-within {
-  border-color: var(--kiy-gold) !important;
-  box-shadow: 0 0 8px #c4a74718;
+  background: #30250b !important;
+  border-color: var(--kiy-yellow) !important;
 }
 
 [class*="placeholder_"] {
-  color: #8e8154 !important;
+  color: var(--kiy-muted) !important;
 }
 
-/* --- BUTTONS: HARD EDGES, OLD GOLD --- */
+/* Composer icons */
+[class*="attachButton_"] svg,
+[class*="buttons_"] svg,
+[class*="channelTextArea_"] svg {
+  color: var(--kiy-gold) !important;
+}
+
+/* ===================== MEMBERS LIST ======================== */
+
+[class*="membersWrap_"],
+[class*="members_"],
+[class*="member_"] {
+  background: #151207 !important;
+}
+
+[class*="member_"]:hover,
+[class*="selected_"][class*="member_"] {
+  background: #30250b !important;
+}
+
+[class*="membersGroup_"] {
+  color: var(--kiy-gold) !important;
+}
+
+/* ===================== BUTTONS ============================ */
 
 button,
 [class*="button_"] {
   border-radius: 0 !important;
-  transition: background 120ms ease, color 120ms ease;
 }
 
 [class*="lookFilled_"][class*="colorBrand_"] {
-  background: #806723 !important;
+  background: #80621d !important;
   color: #fff0b2 !important;
   border: 1px solid var(--kiy-gold) !important;
 }
 
 [class*="lookFilled_"][class*="colorBrand_"]:hover {
-  background: #a78b35 !important;
-  color: #080706 !important;
+  background: #b59435 !important;
+  color: #090805 !important;
 }
 
 [class*="lookOutlined_"] {
-  border: 1px solid var(--kiy-border) !important;
+  background: #201907 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
+  color: var(--kiy-yellow) !important;
 }
 
-/* --- MEMBERS LIST --- */
-
-[class*="members_"],
-[class*="member_"] {
-  background: #0e0c08 !important;
+[class*="lookOutlined_"]:hover {
+  background: #493713 !important;
+  border-color: var(--kiy-yellow) !important;
 }
 
-[class*="member_"]:hover {
-  background: #211b0e !important;
+/* ===================== ICONS & TOOLBAR ===================== */
+
+[class*="toolbar_"] {
+  background: #151207 !important;
 }
 
-[class*="member_"] [class*="username_"] {
-  color: #d4c58f !important;
+[class*="toolbar_"] button,
+[class*="iconWrapper_"],
+[class*="iconWrapper_"] svg {
+  color: var(--kiy-gold) !important;
 }
 
-/* --- PANELS, POPOUTS & MENUS --- */
-
-[class*="menu_"],
-[class*="popout_"],
-[class*="layer_"] [class*="root_"],
-[class*="modal_"] {
-  background: #151209 !important;
-  border: 1px solid var(--kiy-border) !important;
-  box-shadow: 5px 5px 0 #00000080 !important;
+[class*="toolbar_"] button:hover,
+[class*="iconWrapper_"]:hover {
+  background: #493713 !important;
+  color: var(--kiy-pale) !important;
 }
 
-[class*="item_"]:hover {
-  background: #302613 !important;
+/* General interactive SVG icons */
+[class*="sidebar_"] svg,
+[class*="title_"] svg,
+[class*="toolbar_"] svg {
+  color: var(--kiy-gold);
 }
 
-[class*="separator_"] {
-  background: var(--kiy-border) !important;
+/* ===================== SEARCH ============================== */
+
+[class*="searchBar_"],
+[class*="search_"] [class*="searchBar_"] {
+  background: #201907 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
 }
 
-/* --- SETTINGS: THE KING'S ARCHIVE --- */
+[class*="searchBar_"]:focus-within {
+  background: #30250b !important;
+  border-color: var(--kiy-yellow) !important;
+}
+
+[class*="searchBar_"] svg {
+  color: var(--kiy-yellow) !important;
+}
+
+/* ===================== SETTINGS ============================ */
 
 [class*="standardSidebarView_"],
+[class*="sidebarRegion_"],
 [class*="contentRegion_"],
-[class*="sidebarRegion_"] {
-  background: #0b0a08 !important;
+[class*="contentColumn_"],
+[class*="settingsPage_"],
+[class*="userSettings_"] {
+  background: #0e0c06 !important;
 }
 
-[class*="contentColumn_"] {
-  background: #100e09;
+[class*="sidebarRegion_"] [class*="item_"] {
+  color: #bba96d !important;
 }
 
+[class*="sidebarRegion_"] [class*="item_"]:hover {
+  background: #30250b !important;
+  color: var(--kiy-pale) !important;
+}
+
+[class*="sidebarRegion_"] [class*="selected_"] {
+  background: #493713 !important;
+  color: var(--kiy-yellow) !important;
+}
+
+[class*="contentRegion_"] [class*="section_"] {
+  border-color: var(--kiy-gold-dark) !important;
+}
+
+/* Inputs */
 input,
 textarea,
 [class*="input_"] {
-  border-radius: 0 !important;
-  background: #100e09 !important;
-  border: 1px solid var(--kiy-border) !important;
+  background: #100d05 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
   color: var(--kiy-pale) !important;
 }
 
@@ -351,54 +467,186 @@ textarea:focus,
   border-color: var(--kiy-yellow) !important;
 }
 
-/* --- DIVIDERS & SCROLLBARS --- */
+/* ===================== MENUS & POPOUTS ===================== */
 
-[class*="divider_"],
+[class*="menu_"],
+[class*="menu_"] [role="menu"],
+[class*="submenu_"],
+[class*="popout_"],
+[class*="select_"],
+[class*="autocomplete_"],
+[class*="listbox_"] {
+  background: #201907 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
+  box-shadow: 5px 5px 0 #00000099 !important;
+}
+
+[class*="menu_"] [class*="item_"]:hover,
+[class*="menu_"] [role="menuitem"]:hover,
+[class*="option_"]:hover {
+  background: #493713 !important;
+  color: var(--kiy-pale) !important;
+}
+
 [class*="separator_"] {
-  border-color: var(--kiy-border) !important;
+  background: var(--kiy-gold-dark) !important;
 }
 
-::-webkit-scrollbar {
-  width: 7px !important;
-  height: 7px !important;
+/* ===================== MODALS & DIALOGS ==================== */
+
+[class*="modal_"],
+[class*="root_"][class*="modal"],
+[class*="layer_"] [class*="root_"] {
+  background: #151207 !important;
+  border: 1px solid var(--kiy-gold) !important;
+  box-shadow: 7px 7px 0 #00000099 !important;
 }
 
-::-webkit-scrollbar-track {
-  background: #080706 !important;
+[class*="footer_"] {
+  background: #100d05 !important;
+  border-top: 1px solid var(--kiy-gold-dark) !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #655326 !important;
-  border: 1px solid #080706;
+/* ===================== TOOLTIPS =========================== */
+
+[class*="tooltip_"] {
+  background: #493713 !important;
+  color: var(--kiy-pale) !important;
+  border: 1px solid var(--kiy-yellow) !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--kiy-gold) !important;
+/* ===================== NOTIFICATIONS ======================= */
+
+[class*="numberBadge_"],
+[class*="mentionsBadge_"] {
+  background: var(--kiy-yellow) !important;
+  color: #090805 !important;
 }
 
-/* --- SELECTION: THE PALE MASK --- */
-
-::selection {
-  background: #a78b35 !important;
-  color: #080706 !important;
+[class*="unreadPill_"] {
+  background: var(--kiy-yellow) !important;
+  color: #090805 !important;
 }
 
-/* --- SUBTLE SUPERNATURAL GOLD GLOW --- */
+[class*="unread_"] {
+  background: var(--kiy-yellow) !important;
+}
 
-[class*="modeSelected_"] [class*="name_"],
-[class*="tabBar_"] [class*="selected_"] {
+/* ===================== SWITCHES & CHECKBOXES =============== */
+
+[class*="checked_"][class*="switch_"],
+[class*="checked_"][class*="checkbox_"] {
+  background-color: #a88729 !important;
+}
+
+[class*="switch_"] [class*="slider_"] {
+  border-radius: 0 !important;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--kiy-gold) !important;
+}
+
+/* ===================== LINKS & TEXT ======================== */
+
+a,
+[class*="anchor_"] {
   color: var(--kiy-yellow) !important;
 }
 
-a {
-  color: var(--kiy-yellow);
+a:hover,
+[class*="anchor_"]:hover {
+  color: #fff0a3 !important;
 }
 
-a:hover {
-  color: #fff1a6;
+[class*="header_"] {
+  color: var(--kiy-pale);
 }
 
-/* --- END: DO NOT SPEAK THE KING'S NAME --- */
+/* ===================== SCROLLBARS ========================== */
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #090805 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #70551b !important;
+  border: 1px solid #090805 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b59435 !important;
+}
+
+/* ===================== PROFILE PANELS ====================== */
+
+[class*="userPopout_"],
+[class*="userProfileModal_"],
+[class*="outer_"][class*="userProfile"] {
+  background: #151207 !important;
+  border: 1px solid var(--kiy-gold-dark) !important;
+}
+
+[class*="userPopout_"] [class*="overlayBackground_"] {
+  background: #201907 !important;
+}
+
+/* ===================== FRIENDS & DM HOME =================== */
+
+[class*="privateChannels_"] {
+  background: #151207 !important;
+}
+
+[class*="peopleColumn_"],
+[class*="nowPlayingColumn_"] {
+  background: #0e0c06 !important;
+}
+
+[class*="peopleListItem_"] {
+  background: #151207 !important;
+  border-bottom: 1px solid #30250b !important;
+}
+
+[class*="peopleListItem_"]:hover {
+  background: #30250b !important;
+}
+
+/* ===================== FINAL COLOR ENFORCEMENT ============= */
+
+/* Discord components often use opaque backgrounds of their own.
+   This reinforces the main panel colors without flattening
+   every individual element into the same shade. */
+
+[class*="sidebar_"] {
+  background-color: #151207 !important;
+}
+
+[class*="chat_"] {
+  background-color: #0e0c06 !important;
+}
+
+[class*="membersWrap_"] {
+  background-color: #151207 !important;
+}
+
+[class*="guilds_"] {
+  background-color: #090805 !important;
+}
+
+[class*="title_"] {
+  background-color: #201907 !important;
+}
+
+[class*="channelTextArea_"] {
+  background-color: #201907 !important;
+}
+
+/* The Yellow Sign is seen. The King is waiting. */
       '';
     };
   };
