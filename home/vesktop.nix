@@ -49,17 +49,36 @@
       };
     };
 
-    vencord.settings = {
-      autoUpdate = true;
-      autoUpdateNotification = true;
-      useQuickCss = true;
-      eagerPatches = false;
-      enabledThemes = [
-        "Exponent.theme.css"
-      ];
+    vencord = {
+      settings = {
+        autoUpdate = true;
+        autoUpdateNotification = true;
+        useQuickCss = true;
+        eagerPatches = false;
+      };
+      
+      extraQuickCss = ''
+        @import url('https://dom1torii.github.io/discord16/src/css/main.css');
+        * {
+          --font: "ArialPixel"; /* Change to "" for default font */
+          --rounded-avatars: false;
+          --steam-logo: true;
+        }
 
-      themeLinks = [
-        "https://saltssaumure.github.io/xp-discord-theme/Exponent.theme.css"      ];
+        * {
+          --custom-bg: #4a5942;
+          --custom-secondary-bg: #3e4637;
+
+          --custom-accent: #c4b550;
+          --custom-secondary-accent: #958831;
+
+          --dark-border: #292c21;
+          --light-border: #8c9284;
+
+          --custom-text: #ffffff;
+          --custom-secondary-text: #bdbdbd;
+        }     
+      '';
     };
   };
 }
