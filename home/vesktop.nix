@@ -55,11 +55,11 @@
       useQuickCss = true;
       eagerPatches = false;
       enabledThemes = [
-        "NieR-Light-Source.theme.css"
+        "Exponent.theme.css"
       ];
 
       themeLinks = [
-        "https://raw.githubusercontent.com/AccraZed/YoRHA-UI-BetterDiscord/49d5eeee90307fbab5bac301010fcad5e6705be9/NieR-Light-Source.theme.css"
+        "https://raw.githubusercontent.com/Saltssaumure/xp-discord-theme/bccdbdba52d47a51c12c5cf77325f27498337afd/Exponent.theme.css"
       ];
     };
   };
