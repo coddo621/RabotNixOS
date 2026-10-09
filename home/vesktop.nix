@@ -54,9 +54,10 @@
       autoUpdateNotification = true;
       useQuickCss = true;
       eagerPatches = false;
-      enabledThemes = {
+      enabledThemes = [
+        "Exponent.theme.css"
+      ];
 
-      };
       themeLinks = [
         "https://github.com/Saltssaumure/xp-discord-theme/blob/6e9af94d5cc8816a7a6e9fceb2dd8437307cdbc4/Exponent.theme.css"
       ];
