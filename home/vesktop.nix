@@ -55,11 +55,11 @@
       useQuickCss = true;
       eagerPatches = false;
       enabledThemes = [
-        "Exponent.theme.css"
+        "VGUICord.theme.css"
       ];
 
       themeLinks = [
-        "https://raw.githubusercontent.com/Saltssaumure/xp-discord-theme/bccdbdba52d47a51c12c5cf77325f27498337afd/Exponent.theme.css"
+        "https://dom1torii.github.io/VGUICord/src/vguicord.theme.css"
       ];
     };
   };
