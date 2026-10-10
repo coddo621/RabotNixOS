@@ -49,18 +49,20 @@
       };
     };
 
-    vencord.settings = {
-      autoUpdate = true;
-      autoUpdateNotification = true;
-      useQuickCss = true;
-      eagerPatches = false;
-      enabledThemes = [
-        "VGUICord.theme.css"
-      ];
+    vencord = {
+      settings = {
+        autoUpdate = true;
+        autoUpdateNotification = true;
+        useQuickCss = true;
+        eagerPatches = false;
+        enabledThemes = [
+          "VGUICord.theme.css"
+        ];
 
-      themeLinks = [
-        "https://dom1torii.github.io/VGUICord/src/vguicord.theme.css"
-      ];
+        themeLinks = [
+          "https://dom1torii.github.io/VGUICord/src/vguicord.theme.css"
+        ];
+      };
     };
   };
 }
