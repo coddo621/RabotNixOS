@@ -32,10 +32,12 @@
       splashPixelatex = true;
       #splashColor = "ffffff";
       #splashBackground = "000000";
+
       spellCheckLanguages = [
         "en-US"
         "hr"
       ];
+
       audio = {
         workaround = false;
         deviceSelect = true;
@@ -62,6 +64,7 @@
         themeLinks = [
           "https://dom1torii.github.io/VGUICord/src/vguicord.theme.css"
         ];
+
         enableReactDevtools = false;
         frameless = true;
         transparent = true;
@@ -70,31 +73,37 @@
         windowsMaterial = "none";
         disableMinSize = true;
         nativeTitleBar = false;
+
         notifications = {
           timeout = 5000;
           position = "top-right";
           useNative = "not-focused";
           logLimit = 50;
         };
+
         cloud = {
           authenticated = false;
           url = "https://api.vencord.dev/";
           settingsSync = false;
           settingsSyncVersion = 0;
         };
+
         plugins = {
           AccountPanelServerProfile = {
             enabled = true;
             prioritizeServerProfile = true;
           };
+
           AddAttachments.enabled = true;
           AlwaysAnimate.enabled = true;
           AlwaysExpandRoles.enabled = true;
+
           AlwaysTrust = {
             enabled = true;
             domain = true;
             file = true;
           };
+
           AnonymiseFileNames = {
             enabled = false;
             anonymiseByDefault = true;
@@ -102,10 +111,12 @@
             randomizedLength = 10;
             consistent = "";
           };
+
           AutoDNDWhilePlaying = {
             enabled = false;
             statusToSet = "dnd";
           };
+
           BetterFolders = {
             enabled = true;
             sidebar = true;
@@ -118,8 +129,52 @@
             keepIcons = false;
             showFolderIcon = "Always";
           };
-          CharacterCounter.enabled = true;
-          CallTimer.enabled = true;
+
+          BetterGifAltText.enabled = true;
+          BetterGifPicker.enabled = true;
+          
+          BetterRoleContext = {
+            enabled = true;
+            roleIconFileFormat = "png";
+          };
+
+          BetterRoleDot = {
+            enabled = true;
+            bothStyles = true;
+            copyRoleColorInProfilePopout = true;
+          };
+
+          BetterSessions = {
+            enabled = true;
+            backgroundCheck = true;
+            checkInterval = 30;
+          };
+
+          BetterUploadButton.enabled = true;
+          BiggerStreamPreview.enabled = true;
+          
+          BlurNsfw = {
+            enabled = true;
+            blurAmount = 10;
+          };
+
+          CallTimer = {
+            enabled = true;
+            format = "human";
+          };
+          
+          CharacterCounter = {
+            enabled = true;
+            colorEffects = true;
+          };
+
+          ClearURLs.enabled = true;
+
+          clientTheme = {
+            enabled = false;
+            color = "313338";
+            resetColor = false;
+          };
         };
       };
     };
