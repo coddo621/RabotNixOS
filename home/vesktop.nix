@@ -99,8 +99,25 @@
             enabled = false;
             anonymiseByDefault = true;
             method = "random";
+            randomizedLength = 10;
+            consistent = "";
           };
-          AutoDNDWhilePlaying.enabled = false;
+          AutoDNDWhilePlaying = {
+            enabled = false;
+            statusToSet = "dnd";
+          };
+          BetterFolders = {
+            enabled = true;
+            sidebar = true;
+            sidebarAnim = true;
+            closeAllFolders = true;
+            closeAllHomeButton = true;
+            closeOthers = true;
+            closeServerFolder = true;
+            forceOpen = true;
+            keepIcons = false;
+            showFolderIcon = "Always";
+          };
           CharacterCounter.enabled = true;
           CallTimer.enabled = true;
         };
