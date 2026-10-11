@@ -83,7 +83,7 @@
           settingsSyncVersion = 0;
         };
         plugins = {
-          CharacterCounter = true;
+          CharacterCounter.enable = true;
         };
       };
     };
