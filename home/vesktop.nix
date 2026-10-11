@@ -170,11 +170,75 @@
 
           ClearURLs.enabled = true;
 
-          clientTheme = {
+          ClientTheme = {
             enabled = false;
             color = "313338";
             resetColor = false;
           };
+
+          ColorSighted.enabled = false;
+          ConcatenatedComponentExtractor.enabled = true;
+          ConsoleJanitor = {
+            enabled = true;
+            disableLoggers = true;
+            disableSpotifyLogger = true;
+            whitelistedLoggers = "";
+            allowLevel = {
+              error = true;
+              warn = false;
+              trace = false;
+              log = false;
+              info = false;
+              debug = false;
+            };
+          };
+
+          ConsoleShortcuts.enabled = true;
+
+          CopyEmojiMarkdown = {
+            enabled = true;
+            copyUnicode = true;
+          };
+
+          CopyFileContents.enabled = true;
+          CopyStickerLinks.enabled = true;
+          CopyUserURLs.enabled = true;
+
+          CrashHandler = {
+            enabled = true;
+            attemptToPreventCrashes = true;
+            attemptToNavigateToHome = true;
+          };
+
+          CustomCommands.enabled = true;
+
+          CustomIdle = {
+            enabled = true;
+            idleTimeout = 60;
+            remainInIdle = false;
+          };
+
+          CustomRPC = {
+            enabled = true;
+            enablePresence = true;
+          };
+
+          Dearrow = {
+            enabled = true;
+            hideButton = false;
+            replaceElements = "ReplaceAllElements";
+            dearrowByDefault = true;
+          };
+
+          Decor.enabled = true;
+
+          DevCompanion = {
+            enabled = false;
+            notifyOnAutoConnect = true;
+          };
+
+          DisableCallIdle.enabled = true;
+          DisableDeepLinks.enabled = true;
         };
       };
     };
