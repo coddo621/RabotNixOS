@@ -84,6 +84,7 @@
         };
         plugins = {
           CharacterCounter.enabled = true;
+          CallTimer.enabled = true;
         };
       };
     };
