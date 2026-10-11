@@ -83,6 +83,18 @@
           settingsSyncVersion = 0;
         };
         plugins = {
+          AccountPanelServerProfile = {
+            enabled = true;
+            prioritizeServerProfile = true;
+          };
+          AddAttachments.enabled = true;
+          AlwaysAnimate.enabled = true;
+          AlwaysExpandRoles.enabled = true;
+          AlwaysTrust = {
+            enabled = true;
+            domain = true;
+            file = true;
+          };
           CharacterCounter.enabled = true;
           CallTimer.enabled = true;
         };
