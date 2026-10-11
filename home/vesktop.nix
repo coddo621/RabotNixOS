@@ -95,6 +95,12 @@
             domain = true;
             file = true;
           };
+          AnonymiseFileNames = {
+            enabled = false;
+            anonymiseByDefault = true;
+            method = "random";
+          };
+          AutoDNDWhilePlaying.enabled = false;
           CharacterCounter.enabled = true;
           CallTimer.enabled = true;
         };
