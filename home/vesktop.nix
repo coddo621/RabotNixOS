@@ -62,6 +62,29 @@
         themeLinks = [
           "https://dom1torii.github.io/VGUICord/src/vguicord.theme.css"
         ];
+        enableReactDevtools = false;
+        frameless = true;
+        transparent = true;
+        winCtrlQ = false;
+        macosVibrancyStyle = "";
+        windowsMaterial = "none";
+        disableMinSize = true;
+        nativeTitleBar = false;
+        notifications = {
+          timeout = 5000;
+          position = "top-right";
+          useNative = "not-focused";
+          logLimit = 50;
+        };
+        cloud = {
+          authenticated = false;
+          url = "https://api.vencord.dev/";
+          settingsSync = false;
+          settingsSyncVersion = 0;
+        };
+        plugins = {
+          CharacterCounter = true;
+        };
       };
     };
   };
