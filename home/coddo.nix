@@ -3,6 +3,7 @@
 {
   imports = [
     ./vesktop.nix
+    ./awww.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -12,6 +13,8 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
+    everforest-cursors
+
     micro-with-wl-clipboard
     firefox
     krita
@@ -31,7 +34,7 @@
     wofi
     waybar
     awww
-    everforest-cursors
+    
   ];
 
   home.pointerCursor = {
