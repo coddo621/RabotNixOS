@@ -135,6 +135,13 @@
             showFolderIcon = "Always";
           };
 
+          BetterSettings = {
+            enabled = true;
+            disableFade = true;
+            organizeMenu = true;
+            eagerLoad = true;
+          };
+
           BetterGifAltText.enabled = true;
           BetterGifPicker.enabled = true;
           
@@ -158,7 +165,7 @@
           BetterUploadButton.enabled = true;
           BiggerStreamPreview.enabled = true;
           
-          BlurNsfw = {
+          BlurNSFW = {
             enabled = true;
             blurAmount = 10;
           };
@@ -644,6 +651,11 @@
             inReplies = true;
           };
 
+          ShowTimeoutDuration = {
+            enabled = true;
+            displayStyle = "Inline";
+          };
+
           SilentMessageToggle = {
             enabled = true;
             persistState = false;
@@ -736,7 +748,7 @@
           };
 
           UserVoiceShow = {
-            enable = true;
+            enabled = true;
             showInUserProfileModal = true;
             showInMemberList = true;
             showInMessages = true;
