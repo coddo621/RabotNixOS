@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.btop;
     themes = {
-      king_in_yellow = ''
+      steam = ''
         theme[main_bg]="#293021"
         theme[main_fg]="#D4D7C0"
         theme[title]="#E0E2CE"
@@ -52,7 +52,31 @@
     };
 
     settings = {
-      color_theme = "king_in_yellow";
+      color_theme = "steam";
+      theme_background = true;
+      truecolor = true;
+      force_tty = false;
+      presets = "cpu:1:default,proc:0:default cpu:0:default,mem:0:default,net:0:default cpu:0:block,net:0:tty";
+      vim_keys = false;
+      rounded_corners = true;
+      terminal_sync = true;
+      graph_symbol = "block";
+      graph_symbol_cpu = "default";
+      graph_symbol_mem = "default";
+      graph_symbol_net = "default";
+      graph_symbol_proc = "default";
+      shown_boxes = "cpu mem net proc";
+      update_ms = 2000;
+      proc_sorting = "cpu lazy";
+      proc_reversed = false;
+      proc_tree = false;
+      proc_colors = true;
+      proc_gradient = true;
+      proc_per_core = false;
+      proc_mem_bytes = true;
+      proc_cpu_graphs = true;
+      proc_info_smaps = false;
+      proc_left = false;
     };
   };
 }
