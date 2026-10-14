@@ -5,6 +5,7 @@
     ./apps/vesktop.nix
     ./apps/awww.nix
     ./apps/btop.nix
+    ./apps/wofi.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -31,7 +32,6 @@
     sublime4
     gcc
     vscode
-    wofi
     waybar
     zoxide
     wlogout
