@@ -2,8 +2,9 @@
 
 {
   imports = [
-    ./vesktop.nix
-    ./awww.nix
+    ./apps/vesktop.nix
+    ./apps/awww.nix
+    ./apps/btop.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -14,7 +15,6 @@
 
   home.packages = with pkgs; [
     everforest-cursors
-
     micro-with-wl-clipboard
     firefox
     krita
@@ -33,8 +33,12 @@
     vscode
     wofi
     waybar
-    awww
-    
+    zoxide
+    wlogout
+    wget
+    #vscodium
+    gnome-disk-utility
+    grim
   ];
 
   home.pointerCursor = {
