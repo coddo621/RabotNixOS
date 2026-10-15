@@ -39,7 +39,19 @@
     #vscodium
     gnome-disk-utility
     grim
-    thunar
+    nautilus
+    hypridle
+    hyprlock
+    hyprpicker
+    libreoffice
+    netdiscover
+    nmap
+    slurp
+    scrcpy
+    qbittorrent
+    pavucontrol
+    overskride
+    obsidian
   ];
 
   home.pointerCursor = {

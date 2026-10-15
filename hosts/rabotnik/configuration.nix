@@ -107,6 +107,8 @@
     noto-fonts-color-emoji
     liberation_ttf
     font-awesome
+    iosevka
+    jetbrains-mono
   ];
 
   nixpkgs.config.allowUnfree = true;
