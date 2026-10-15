@@ -827,9 +827,7 @@
       };
 
       extraQuickCss = "";
-
       themes = {};
-
       useSystem = false;
     };
   };

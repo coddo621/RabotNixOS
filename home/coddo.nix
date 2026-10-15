@@ -39,6 +39,7 @@
     #vscodium
     gnome-disk-utility
     grim
+    thunar
   ];
 
   home.pointerCursor = {
