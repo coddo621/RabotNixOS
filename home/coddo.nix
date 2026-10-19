@@ -16,6 +16,8 @@
 
   home.packages = with pkgs; [
     everforest-cursors
+    wget
+    
     micro-with-wl-clipboard
     firefox
     krita
@@ -23,7 +25,6 @@
     alacritty
     eclipses.eclipse-java
     arduino-ide
-    btop
     ani-cli
     android-tools
     ungoogled-chromium
@@ -35,7 +36,6 @@
     waybar
     zoxide
     wlogout
-    wget
     #vscodium
     gnome-disk-utility
     grim
