@@ -1,14 +1,13 @@
 { pkgs, ... }:
-
+#DONE
 {
   programs.zoxide = {
     enable = true;
     package = pkgs.zoxide;
-    flags = [];
+    options = [];
     enableBashIntegration = false;
     enableFishIntegration = false;
     enableZshIntegration = true;
-    enableXonshIntegration = false;
     enableNushellIntegration = false;
   };
 }

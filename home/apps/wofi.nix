@@ -85,5 +85,13 @@
         color: #f0f0d0;
       }
     '';
+    settings = {
+      #style = "";
+      #stylesheet = "";
+      #color = "";
+      #show = "run" || "drun" || "dmenu"
+      #mode = "run" || "drun" || "dmenu"
+      width = "50%";
+    };
   };
 }

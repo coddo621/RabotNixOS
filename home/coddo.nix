@@ -6,6 +6,9 @@
     ./apps/awww.nix
     ./apps/btop.nix
     ./apps/wofi.nix
+    ./apps/mpv.nix
+    ./apps/waybar.nix
+    ./apps/zoxide.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -17,6 +20,7 @@
   home.packages = with pkgs; [
     everforest-cursors
     wget
+    nmap
     
     micro-with-wl-clipboard
     firefox
@@ -28,13 +32,10 @@
     ani-cli
     android-tools
     ungoogled-chromium
-    mpv
     fzf
     sublime4
     gcc
     vscode
-    waybar
-    zoxide
     wlogout
     #vscodium
     gnome-disk-utility
@@ -45,7 +46,6 @@
     hyprpicker
     libreoffice
     netdiscover
-    nmap
     slurp
     scrcpy
     qbittorrent
