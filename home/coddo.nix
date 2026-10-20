@@ -75,7 +75,7 @@
     configType = "lua";
 
     extraConfig = ''
-      hl.on("hyprland.start", function()
+      hl.on("t.start", function()
         hl.exec_cmd("waybar")
         hl.exec_cmd("awww-daemon")
         hl.exec_cmd("sleep 0.5; awww img $(find /home/coddo/Pictures/Wallpapers -type f | shuf -n 1) --transition-type random --transition-step 90 --transition-duration 1.5 --transition-fps 60 --transition-angle 45 --transition-pos center --transition-wave 20,20 --transition-bezier 0.54,0,0.34,0.99 --resize crop --crop-gravity center --filter Lanczos3 --fill-color 000000")
@@ -298,7 +298,35 @@
     enable = true;
 
     shellAliases = {
-      rebuild = "bash $HOME/.config/nixos/rebuild.sh";
+      rebuild =''(
+        set -e
+
+        CONFIG_DIR="$HOME/.config/nixos"
+        cd "$CONFIG_DIR"
+
+        echo "==> Rebuilding NixOS..."
+        sudo nixos-rebuild switch --flake ".#rabotnik"
+
+        echo "==> Rebuild successful!"
+
+        if [[ -n "$(git status --porcelain)" ]]; then
+          echo "==> Changes detected:"
+          git status --short
+
+          echo "==> Adding changes..."
+          git add -A
+
+          echo "==> Committing changes..."
+          git commit -m "Update NixOS configuration"
+
+          echo "==> Changes committed."
+        else
+          echo "==> No changes to commit."
+        fi
+
+        echo "==> Done!"
+      )'';
+        
       garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
     };
 

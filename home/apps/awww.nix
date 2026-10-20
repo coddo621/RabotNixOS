@@ -1,9 +1,9 @@
 { pkgs, ... }:
 
 {
-    services.awww = {
-        enable = true;
-        package = pkgs.awww;
-        extraArgs = [""];
-    };
+  services.awww = {
+    enable = true;
+    package = pkgs.awww;
+    extraArgs = [""];
+  };
 }
