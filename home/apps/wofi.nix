@@ -91,7 +91,7 @@
       #color = "";
       #show = "run" || "drun" || "dmenu"
       #mode = "run" || "drun" || "dmenu"
-      width = "50%";
+      width = "25%";
     };
   };
 }
