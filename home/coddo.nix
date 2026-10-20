@@ -75,7 +75,7 @@
     configType = "lua";
 
     extraConfig = ''
-      hl.on("t.start", function()
+      hl.on("hyprland.start", function()
         hl.exec_cmd("waybar")
         hl.exec_cmd("awww-daemon")
         hl.exec_cmd("sleep 0.5; awww img $(find /home/coddo/Pictures/Wallpapers -type f | shuf -n 1) --transition-type random --transition-step 90 --transition-duration 1.5 --transition-fps 60 --transition-angle 45 --transition-pos center --transition-wave 20,20 --transition-bezier 0.54,0,0.34,0.99 --resize crop --crop-gravity center --filter Lanczos3 --fill-color 000000")
