@@ -94,9 +94,9 @@
       width = "25%";
       height = "25%";
       prompt = "Morning Mr Freeman, looks like you're running late";
-      xoffset = 0;
+      xoffset = 720;
       halign = "center";
-      location = "center";
+      location = "top_left";
 
       #x = "0";
       yoffset = "0";
