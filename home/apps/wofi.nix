@@ -96,6 +96,7 @@
       prompt = "Morning Mr Freeman, looks like you're running late";
       xoffset = 0;
       halign = "center";
+      location = "center";
 
       #x = "0";
       yoffset = "0";
