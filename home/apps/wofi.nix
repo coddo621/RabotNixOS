@@ -96,10 +96,10 @@
       prompt = "Morning Mr Freeman, looks like you're running late";
       #xoffset = 720;
       halign = "center";
-      location = "center";
+      location = "top";
 
       #x = "0";
-      yoffset = "0";
+      #yoffset = "0";
     };
   };
 }
