@@ -95,7 +95,7 @@
       height = "25%";
       prompt = "Morning Mr Freeman, looks like you're running late";
       #xoffset = 720;
-      halign = "center";
+      #halign = "center";
       location = "top";
       hide_search = false;
       allow_images = true;
