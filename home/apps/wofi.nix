@@ -97,7 +97,7 @@
       #xoffset = 720;
       halign = "center";
       location = "top";
-
+      hide_search = true;
       #x = "0";
       #yoffset = "0";
     };
