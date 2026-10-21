@@ -92,7 +92,8 @@
       #show = "run" || "drun" || "dmenu"
       #mode = "run" || "drun" || "dmenu"
       width = "25%";
-      prompt = "AH, Mr. Freeman";
+      height = "25%";
+      prompt = "Morning Mr Freeman, looks like you're running late";
     };
   };
 }
