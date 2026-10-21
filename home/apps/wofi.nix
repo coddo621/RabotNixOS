@@ -92,6 +92,7 @@
       #show = "run" || "drun" || "dmenu"
       #mode = "run" || "drun" || "dmenu"
       width = "25%";
+      prompt = "AH, Mr. Freeman";
     };
   };
 }
