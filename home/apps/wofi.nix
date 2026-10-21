@@ -94,9 +94,9 @@
       width = "25%";
       height = "25%";
       prompt = "Morning Mr Freeman, looks like you're running late";
-      xoffset = "0";
-      x = "0";
-      yoffset = "610";
+      #xoffset = "0";
+      #x = "0";
+      yoffset = "0";
     };
   };
 }
