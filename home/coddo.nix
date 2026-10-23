@@ -136,6 +136,14 @@
 
         {
           _args = [
+            (lib.generators.mkLuaInline "\"ALT + Tab\"")
+            (lib.generators.mkLuaInline "hl.dispatch(hl.dsp.window.cycle_next())")
+            (lib.generators.mkLuaInline "hl.dispatch(hl.dsp.window.bring_to_top())")
+          ];
+        }
+
+        {
+          _args = [
             (lib.generators.mkLuaInline "mod .. \" + R\"")
             (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wofi --show drun\")")
           ];
