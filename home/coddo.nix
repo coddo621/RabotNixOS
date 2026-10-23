@@ -10,6 +10,7 @@
     ./apps/waybar.nix
     ./apps/zoxide.nix
     ./apps/zsh.nix
+    ./apps/hyprshell.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -23,7 +24,7 @@
     wget
     nmap
     
-    hyprshell
+    
 
     micro-with-wl-clipboard
     firefox
