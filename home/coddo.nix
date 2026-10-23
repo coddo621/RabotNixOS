@@ -136,7 +136,7 @@
           ];
         }
 
-        {
+        #{
           #_args = [
           #  (lib.generators.mkLuaInline "\"ALT + Tab\"")
           #  (lib.generators.mkLuaInline ''
@@ -146,7 +146,7 @@
           #    end
           #  '')
           #];
-        }
+        #}
 
         {
           _args = [
