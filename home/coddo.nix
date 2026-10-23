@@ -137,15 +137,15 @@
         }
 
         {
-          _args = [
-            (lib.generators.mkLuaInline "\"ALT + Tab\"")
-            (lib.generators.mkLuaInline ''
-              function()
-                hl.dispatch(hl.dsp.window.cycle_next())
-                hl.dispatch(hl.dsp.window.bring_to_top())
-              end
-            '')
-          ];
+          #_args = [
+          #  (lib.generators.mkLuaInline "\"ALT + Tab\"")
+          #  (lib.generators.mkLuaInline ''
+          #    function()
+          #      hl.dispatch(hl.dsp.window.cycle_next())
+          #      hl.dispatch(hl.dsp.window.bring_to_top())
+          #    end
+          #  '')
+          #];
         }
 
         {
