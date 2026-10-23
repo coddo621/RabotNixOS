@@ -23,6 +23,8 @@
     wget
     nmap
     
+    hyprshell
+
     micro-with-wl-clipboard
     firefox
     krita
