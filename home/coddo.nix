@@ -137,8 +137,12 @@
         {
           _args = [
             (lib.generators.mkLuaInline "\"ALT + Tab\"")
-            (lib.generators.mkLuaInline "hl.dispatch(hl.dsp.window.cycle_next())")
-            (lib.generators.mkLuaInline "hl.dispatch(hl.dsp.window.bring_to_top())")
+            (lib.generators.mkLuaInline ''
+              function()
+                hl.dispatch(hl.dsp.window.cycle_next())
+                hl.dispatch(hl.dsp.window.bring_to_top())
+              end
+            '')
           ];
         }
 
