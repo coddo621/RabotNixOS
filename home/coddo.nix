@@ -24,7 +24,7 @@
     wget
     nmap
     
-    
+    unityhub
 
     micro-with-wl-clipboard
     firefox
