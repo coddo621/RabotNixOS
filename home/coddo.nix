@@ -11,6 +11,7 @@
     ./apps/zoxide.nix
     ./apps/zsh.nix
     ./apps/hyprshell.nix
+    ./apps/vscodium.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -39,7 +40,6 @@
     fzf
     sublime4
     gcc
-    vscode
     wlogout
     #vscodium
     gnome-disk-utility
