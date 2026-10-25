@@ -9,9 +9,10 @@
         scale = 8.0;
 
         overview = {
-          launcher = {
+          
+        };
+        launcher = {
             max_items = 6;
-          };
         };
 
         switch = {
