@@ -11,7 +11,7 @@
     ./apps/zoxide.nix
     ./apps/zsh.nix
     ./apps/hyprshell.nix
-    ./apps/vscodium.nix
+    #./apps/vscodium.nix
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
@@ -26,6 +26,8 @@
     nmap
     
     unityhub
+
+	vscode
 
     micro-with-wl-clipboard
     firefox
