@@ -12,6 +12,7 @@
         alefragnani.project-manager
         bradlc.vscode-tailwindcss
         yzhang.markdown-all-in-one
+        jeff-hykin.better-nix-syntax
       ])
       ++ [
         pkgs.nix-vscode-extensions.vscode-marketplace."76valentin"."steam-classic"
