@@ -1,22 +1,21 @@
 { pkgs, inputs, lib, ... }:
 
 {
-  imports =
-    let
-      appsDir = ./apps;
-      files = builtins.readDir appsDir;
-    in
-    (builtins.map
-      (name: appsDir + "/${name}")
-      (builtins.filter
-        (name:
-          files.${name} == "regular"
-          && builtins.match ".*\\.nix" name != null
-        )
-        (builtins.attrNames files)))
-    ++ [
-      inputs.areofyl-fetch.homeManagerModules.default
-    ];
+  imports = [
+    ./apps/awww.nix
+    ./apps/hyprland.nix
+    ./apps/btop.nix
+    ./apps/hyprshell.nix
+    ./apps/mpv.nix
+    ./apps/vesktop.nix
+    ./apps/vscodium.nix
+    ./apps/waybar.nix
+    ./apps/wofi.nix
+    ./apps/zoxide.nix
+    ./apps/zsh.nix
+    
+    inputs.areofyl-fetch.homeManagerModules.default
+  ];
 
   home.username = "coddo";
   home.homeDirectory = "/home/coddo";
