@@ -1,10 +1,12 @@
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
   ];
+
+
 
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
@@ -113,5 +115,9 @@
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [ "openssl-1.1.1w"];
+
+  nixpkgs.overlays = [
+    inputs.nix-vscode-extensions.overlays.default
+  ];
   system.stateVersion = "26.05";
 }
