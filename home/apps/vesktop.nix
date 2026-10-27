@@ -830,10 +830,11 @@
       };
 
       extraQuickCss = ''
-        [class^="messageContent_"] {
-          color: #ff0000 !important; 
+        [class*="messageContent_"] {
+          color: #ff0000 !important;
         }
       '';
+      
       themes = {};
       useSystem = false;
     };
