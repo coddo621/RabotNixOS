@@ -831,10 +831,10 @@
 
       extraQuickCss = ''
         [class*="messageContent_"] {
-          color: #ff0000 !important;
+          color: #ffffff !important;
         }
       '';
-      
+
       themes = {};
       useSystem = false;
     };
