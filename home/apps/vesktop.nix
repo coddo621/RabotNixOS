@@ -823,10 +823,17 @@
 
           XSOverlay.enabled = false;
           YoutubeAdblock.enabled = true;
+          DirectFileDownload.enabled = true;
+
+          JumpToTop.enabled = true;
         };
       };
 
-      extraQuickCss = "";
+      extraQuickCss = ''
+        [class^="messageContent_"] {
+          color: #ff0000 !important; 
+        }
+      '';
       themes = {};
       useSystem = false;
     };

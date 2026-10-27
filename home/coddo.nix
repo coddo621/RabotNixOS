@@ -38,7 +38,6 @@
     arduino-ide
     #ani-cli
     android-tools
-    ungoogled-chromium
     fzf
     sublime4
     gcc

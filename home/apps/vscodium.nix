@@ -19,7 +19,8 @@
         rust-lang.rust-analyzer
         ritwickdey.liveserver
         pranaygp.vscode-css-peek
-
+        njpwerner.autodocstring
+        
       ])
       ++ [
         pkgs.nix-vscode-extensions.vscode-marketplace."76valentin"."steam-classic"
