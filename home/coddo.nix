@@ -13,6 +13,7 @@
     ./apps/wofi.nix
     ./apps/zoxide.nix
     ./apps/zsh.nix
+    ./apps/alacritty.nix
     
     inputs.areofyl-fetch.homeManagerModules.default
   ];
@@ -33,7 +34,6 @@
     firefox
     krita
     git
-    alacritty
     eclipses.eclipse-java
     arduino-ide
     #ani-cli
