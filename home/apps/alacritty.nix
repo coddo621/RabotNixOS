@@ -5,7 +5,9 @@
         enable = true;
         package = pkgs.alacritty;
         settings = {
-            opacity = 0.5;
+            window = {
+                opacity = 0.5;
+            };
         };
     };
 }
