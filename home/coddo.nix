@@ -2,10 +2,12 @@
 
 {
   imports = [
+    ./apps/alacritty.nix
     ./apps/awww.nix
-    ./apps/hyprland.nix
     ./apps/btop.nix
+    ./apps/hyprland.nix
     ./apps/hyprshell.nix
+    ./apps/micro.nix
     ./apps/mpv.nix
     ./apps/vesktop.nix
     ./apps/vscodium.nix
@@ -13,7 +15,6 @@
     ./apps/wofi.nix
     ./apps/zoxide.nix
     ./apps/zsh.nix
-    ./apps/alacritty.nix
     
     inputs.areofyl-fetch.homeManagerModules.default
   ];
@@ -24,20 +25,22 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
+    #Non-options
     everforest-cursors
     wget
     nmap
-    
-    unityhub
+    netdiscover
+    scrcpy
+    android-tools
 
-    micro-with-wl-clipboard
+    timg
+    unityhub
     firefox
     krita
     git
     eclipses.eclipse-java
     arduino-ide
     #ani-cli
-    android-tools
     fzf
     sublime4
     gcc
@@ -49,9 +52,7 @@
     hyprlock
     hyprpicker
     libreoffice
-    netdiscover
     slurp
-    scrcpy
     qbittorrent
     pavucontrol
     overskride
@@ -69,12 +70,6 @@
     x11.enable = true;
     hyprcursor.enable = true;
   };
-
-  programs.waybar = {
-    enable = true;
-  };
-
-  
 
   programs.home-manager.enable = true;
 

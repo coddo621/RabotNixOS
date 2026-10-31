@@ -4,6 +4,10 @@
   programs.vscodium = {
     enable = true;
     package = pkgs.vscodium;
+    profiles = {};
+    argvSettings = {
+
+    };
 
     profiles.default.extensions =
       (with pkgs.vscode-extensions; [
