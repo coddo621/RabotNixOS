@@ -19,15 +19,15 @@
     scrcpy
     android-tools
     overskride
-
+    pwvucontrol
     timg
+
     unityhub
-    firefox
     krita
     git
     eclipses.eclipse-java
     arduino-ide
-    #ani-cli
+    ani-cli
     fzf
     sublime4
     gcc
@@ -41,7 +41,6 @@
     libreoffice
     slurp
     qbittorrent
-    pavucontrol
   ];
 
   home.pointerCursor = {
