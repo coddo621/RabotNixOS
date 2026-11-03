@@ -8,7 +8,10 @@
   programs.fetch = {
     enable = true;
 
-    labelColor = "red";
+    labelColor = "green";
+    separator = ">";
+    light = "top-left";
+    shading = ".Mm|";
 
     info = [
       "os"
@@ -36,5 +39,7 @@
 
     speed = 1.0;
     spin = "xy";
+    size = 3.0;
+    height = 1;
   };
 }
