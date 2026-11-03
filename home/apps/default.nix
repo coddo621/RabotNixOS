@@ -3,6 +3,7 @@
         ./alacritty.nix
         ./awww.nix
         ./btop.nix
+        ./fetch.nix
         ./hyprland.nix
         ./hyprshell.nix
         ./micro.nix
