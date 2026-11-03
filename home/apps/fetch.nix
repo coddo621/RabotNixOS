@@ -9,7 +9,7 @@
     enable = true;
 
     labelColor = "green";
-    separator = ">";
+    separator = "*";
     light = "top-left";
     shading = ".Mm|";
 
@@ -39,7 +39,7 @@
 
     speed = 1.0;
     spin = "xy";
-    size = 3.0;
+    size = 1.0;
     height = 1;
   };
 }
