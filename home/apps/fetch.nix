@@ -41,5 +41,10 @@
     spin = "y";
     size = 1.5;
     height = 1;
+    extraConfig = ''
+      futureOptionFloat = 1.0;
+      futureOptionBool = true;
+      futureOptionStr = "metric";
+    '';
   };
 }
