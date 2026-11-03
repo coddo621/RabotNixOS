@@ -11,7 +11,7 @@
     labelColor = "green";
     separator = "*";
     light = "top-left";
-    shading = ".Mm|";
+    shading = "mMz";
 
     info = [
       "os"
@@ -38,8 +38,8 @@
     ];
 
     speed = 1.0;
-    spin = "xy";
-    size = 1.75;
+    spin = "y";
+    size = 1.5;
     height = 1;
   };
 }
