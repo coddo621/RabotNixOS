@@ -4,6 +4,7 @@
     ./awww.nix
     ./btop.nix
     ./fetch.nix
+    ./git.nix
     ./hyprland.nix
     ./hyprshell.nix
     ./librewolf.nix

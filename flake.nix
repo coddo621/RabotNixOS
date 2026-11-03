@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
@@ -14,7 +15,7 @@
     areofyl-fetch.url = "github:areofyl/fetch";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, ... }: {
     nixosConfigurations.rabotnik = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
@@ -24,6 +25,17 @@
 
       modules = [
         ./hosts/rabotnik/configuration.nix
+
+        {
+          nixpkgs.overlays = [
+            (final: prev: {
+              unstable = import nixpkgs-unstable {
+                system = final.stdenv.hostPlatform.system;
+                config = final.config;
+              };
+            })
+          ];
+        }
 
         home-manager.nixosModules.home-manager
 

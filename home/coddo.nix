@@ -5,10 +5,19 @@
   
   home = {
     username = "coddo";
-  };
+    homeDirectory = "/home/coddo";
+    stateVersion = "26.05";
 
-  home.homeDirectory = "/home/coddo";
-  home.stateVersion = "26.05";
+    pointerCursor = {
+      enable = true;
+      package = pkgs.everforest-cursors;
+      name = "everforest-cursors";
+      size = 24;
+      gtk.enable = true;
+      x11.enable = true;
+      hyprcursor.enable = true;
+    };
+  };
 
   home.packages = with pkgs; [
     #Non-options
@@ -21,17 +30,15 @@
     overskride
     pwvucontrol
     timg
-
     unityhub
     krita
-    git
+    slurp
+
     eclipses.eclipse-java
     arduino-ide
-    ani-cli
     fzf
     sublime4
     gcc
-    wlogout
     gnome-disk-utility
     grim
     nautilus
@@ -39,21 +46,6 @@
     hyprlock
     hyprpicker
     libreoffice
-    slurp
     qbittorrent
   ];
-
-  home.pointerCursor = {
-    enable = true;
-
-    package = pkgs.everforest-cursors;
-    name = "everforest-cursors";
-    size = 24;
-
-    gtk.enable = true;
-    x11.enable = true;
-    hyprcursor.enable = true;
-  };
-
-  programs.home-manager.enable = true;
 }
