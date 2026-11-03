@@ -33,6 +33,7 @@
     unityhub
     krita
     slurp
+    unstable.ani-cli
 
     eclipses.eclipse-java
     arduino-ide
