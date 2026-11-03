@@ -15,13 +15,13 @@
     ./apps/wofi.nix
     ./apps/zoxide.nix
     ./apps/zsh.nix
+    ./apps/obsidian.nix
     
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 
   home.username = "coddo";
   home.homeDirectory = "/home/coddo";
-
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
@@ -33,6 +33,7 @@
     scrcpy
     android-tools
 
+    librewolf
     timg
     unityhub
     firefox
@@ -56,7 +57,6 @@
     qbittorrent
     pavucontrol
     overskride
-    obsidian
   ];
 
   home.pointerCursor = {
@@ -72,8 +72,6 @@
   };
 
   programs.home-manager.enable = true;
-
-  programs.firefox.enable = true;
 
   programs.fetch = {
     enable = true;
