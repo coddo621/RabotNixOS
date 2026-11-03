@@ -6,6 +6,7 @@
     ./fetch.nix
     ./hyprland.nix
     ./hyprshell.nix
+    ./librewolf.nix
     ./micro.nix
     ./mpv.nix
     ./obsidian.nix
@@ -15,5 +16,6 @@
     ./wofi.nix
     ./zoxide.nix
     ./zsh.nix
+
   ];
 }

@@ -1,14 +1,12 @@
-{ pkgs, inputs, lib, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [
-    ./apps
-  ];
+  imports = [ ./apps ];
   
   home = {
     username = "coddo";
   };
-  
+
   home.homeDirectory = "/home/coddo";
   home.stateVersion = "26.05";
 
@@ -20,8 +18,8 @@
     netdiscover
     scrcpy
     android-tools
+    overskride
 
-    librewolf
     timg
     unityhub
     firefox
@@ -44,7 +42,6 @@
     slurp
     qbittorrent
     pavucontrol
-    overskride
   ];
 
   home.pointerCursor = {
