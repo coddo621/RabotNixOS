@@ -3,7 +3,6 @@
 {
   imports = [
     ./apps
-    inputs.areofyl-fetch.homeManagerModules.default
   ];
 
   home.username = "coddo";
