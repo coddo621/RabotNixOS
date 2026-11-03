@@ -2,21 +2,7 @@
 
 {
   imports = [
-    ./apps/alacritty.nix
-    ./apps/awww.nix
-    ./apps/btop.nix
-    ./apps/hyprland.nix
-    ./apps/hyprshell.nix
-    ./apps/micro.nix
-    ./apps/mpv.nix
-    ./apps/vesktop.nix
-    ./apps/vscodium.nix
-    ./apps/waybar.nix
-    ./apps/wofi.nix
-    ./apps/zoxide.nix
-    ./apps/zsh.nix
-    ./apps/obsidian.nix
-    
+    ./apps
     inputs.areofyl-fetch.homeManagerModules.default
   ];
 

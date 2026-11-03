@@ -7,6 +7,7 @@
     cli.enable = true;
     vaults = {
       CyberpunkRed = {
+        enable = true;
         target = "Documents/Obsidian/CyberpunkRed";
       };
     };
