@@ -11,5 +11,8 @@
         ./vesktop.nix
         ./vscodium.nix
         ./waybar.nix
+        ./wofi.nix
+        ./zoxide.nix
+        ./zsh.nix
     ];
 }
