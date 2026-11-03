@@ -39,7 +39,7 @@
 
     speed = 1.0;
     spin = "xy";
-    size = 1.0;
+    size = 2.0;
     height = 1;
   };
 }
