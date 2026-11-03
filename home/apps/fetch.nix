@@ -12,8 +12,26 @@
 
     info = [
       "os"
+      "host"
       "kernel"
       "uptime"
+      "packages"
+      "shell"
+      "display"
+      "wm"
+      "theme"
+      "icons"
+      "font"
+      "terminal"
+      "cpu"
+      "gpu"
+      "memory"
+      "swap"
+      "disk"
+      "ip"
+      "battery"
+      "locale"
+      "colors"
     ];
 
     speed = 1.0;

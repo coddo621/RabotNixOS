@@ -4,8 +4,11 @@
   imports = [
     ./apps
   ];
-
-  home.username = "coddo";
+  
+  home = {
+    username = "coddo";
+  };
+  
   home.homeDirectory = "/home/coddo";
   home.stateVersion = "26.05";
 
