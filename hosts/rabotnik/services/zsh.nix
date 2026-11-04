@@ -37,7 +37,7 @@
       garbage = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
     };
 
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       theme = "robbyrussell";
 

@@ -4,7 +4,7 @@
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;
-    systemd.target = "";
+    systemd.targets = "";
     settings.mainBar = {
       layer = "top";
       position = "top";
