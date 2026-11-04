@@ -28,25 +28,23 @@
     scrcpy
     android-tools
     overskride
-    pwvucontrol
+    pavucontrol
     timg
     unityhub
     krita
     slurp
     unstable.ani-cli
+    grim
 
     eclipses.eclipse-java
     arduino-ide
-    fzf
     sublime4
     gcc
     gnome-disk-utility
-    grim
     nautilus
     hypridle
     hyprlock
     hyprpicker
     libreoffice
-    qbittorrent
   ];
 }

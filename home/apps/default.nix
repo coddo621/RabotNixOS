@@ -4,6 +4,7 @@
     ./awww.nix
     ./btop.nix
     ./fetch.nix
+    ./fzf.nix
     ./git.nix
     ./hyprland.nix
     ./hyprshell.nix
@@ -14,9 +15,9 @@
     ./vesktop.nix
     ./vscodium.nix
     ./waybar.nix
+    ./wlogout.nix
     ./wofi.nix
     ./zoxide.nix
     ./zsh.nix
-
   ];
 }

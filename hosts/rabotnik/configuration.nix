@@ -51,6 +51,8 @@
 
   console.keyMap = "croat";
 
+  programs.zsh.enable = true;
+
   services.printing.enable = true;
 
   services.pipewire = {
@@ -62,8 +64,6 @@
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
-
-  programs.zsh.enable = true;
 
   users.users.coddo = {
     isNormalUser = true;
