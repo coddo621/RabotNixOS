@@ -35,16 +35,13 @@
     slurp
     unstable.ani-cli
     grim
-
-    eclipses.eclipse-java
-    arduino-ide
+    qbittorrent
     sublime4
-    gcc
     gnome-disk-utility
-    nautilus
     hypridle
-    hyprlock
     hyprpicker
+    nautilus
     libreoffice
+    arduino-ide
   ];
 }

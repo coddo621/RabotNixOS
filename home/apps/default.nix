@@ -3,10 +3,12 @@
     ./alacritty.nix
     ./awww.nix
     ./btop.nix
+    ./eclipse.nix
     ./fetch.nix
     ./fzf.nix
     ./git.nix
     ./hyprland.nix
+    ./hyprlock.nix
     ./hyprshell.nix
     ./librewolf.nix
     ./micro.nix
