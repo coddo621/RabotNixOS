@@ -54,8 +54,6 @@
 
   console.keyMap = "croat";
 
-  programs.zsh.enable = true;
-
   services.printing.enable = true;
 
   services.pipewire = {
@@ -77,6 +75,8 @@
       "wheel"
     ];
   };
+
+  users.defaultUserShell = pkgs.zsh;
 
   nix.settings.experimental-features = [
     "nix-command"
