@@ -1,27 +1,37 @@
-
 { config, pkgs, inputs, ... }:
 
 {
   imports = [
+    ./services
     ./hardware-configuration.nix
   ];
 
+  boot = {
+    loader = {
+      efi = {
+        canTouchEfiVariables = true;
+      };
 
-
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub = {
-    enable = true;
-    efiSupport = true;
-    device = "nodev";
-    useOSProber = false;
+      grub = {
+        enable = true;
+        efiSupport = true;
+        device = "nodev";
+        useOSProber = false;
+      };
+    };
   };
 
-  networking.hostName = "rabotnik";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "rabotnik";
 
-  networking.firewall = {
-    enable = true;
-    allowPing = false;
+    networkmanager = {
+      enable = true;
+    };
+
+    firewall = {
+      enable = true;
+      allowPing = false;
+    };
   };
 
   time.timeZone = "Europe/Zagreb";
@@ -40,13 +50,6 @@
       LC_TELEPHONE = "hr_HR.UTF-8";
       LC_TIME = "hr_HR.UTF-8";
     };
-  };
-
-  services.xserver.enable = false;
-
-  services.xserver.xkb = {
-    layout = "hr";
-    variant = "";
   };
 
   console.keyMap = "croat";

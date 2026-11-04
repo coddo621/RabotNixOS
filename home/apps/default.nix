@@ -6,6 +6,7 @@
     ./eclipse.nix
     ./fetch.nix
     ./fzf.nix
+    ./gcc.nix
     ./git.nix
     ./hyprland.nix
     ./hyprlock.nix
@@ -20,6 +21,5 @@
     ./wlogout.nix
     ./wofi.nix
     ./zoxide.nix
-    ./zsh.nix
   ];
 }
