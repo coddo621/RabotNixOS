@@ -55,6 +55,8 @@
   console.keyMap = "croat";
 
   services.printing.enable = true;
+  
+  system.userActivationScripts.zshrc = "touch .zshrc";
 
   services.pipewire = {
     enable = true;

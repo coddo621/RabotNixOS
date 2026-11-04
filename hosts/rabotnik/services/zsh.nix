@@ -47,12 +47,5 @@
         "docker"
       ];
     };
-
-    promptInit = "";
-
-    interactiveShellInit = ''
-        autoload -Uz compinit
-        compinit
-    '';
   };
 }
