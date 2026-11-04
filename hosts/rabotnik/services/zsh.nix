@@ -48,9 +48,11 @@
       ];
     };
 
+    promptInit = "";
+
     interactiveShellInit = ''
-        export ZSH_DISABLE_COMPFIX=true
-        export ZSH_DISABLE_AUTOMATIC_UPDATE=true
+        autoload -Uz compinit
+        compinit
     '';
   };
 }
