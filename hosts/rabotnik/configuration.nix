@@ -71,14 +71,6 @@ in
   
   system.userActivationScripts.zshrc = "touch .zshrc";
 
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
   users.users.coddo = {
@@ -102,12 +94,6 @@ in
   nix.gc.automatic = true;
   nix.gc.options = "--delete-older-than 14d";
   system.autoUpgrade.enable = true;
-
-  programs.hyprland = {
-    enable = true;
-    withUWSM = true;
-    xwayland.enable = true;
-  };
 
   fonts.packages = with pkgs; [
     noto-fonts

@@ -1,5 +1,5 @@
 { pkgs, ... }:
-
+#DONE
 {
   services.printing = {
     enable = true;
@@ -54,7 +54,10 @@
     '';
 
     stateless = false;
-    browsed.enable = false; #Enable if avahi added
+    browsed = {
+      enable = false; #Enable if avahi added
+      package = pkgs.cups-browsed;
+    };
 
     clientConf = ''
       AllowAnyRoot Yes
@@ -103,9 +106,13 @@
     openFirewall = false;
     webInterface = true;
     defaultShared = true;
+    extraFilesConf = '''';
 
-    extraFilesConf = ''
-    '';
+    listenAddresses = [
+      "localhost:631"
+    ];
+
+    startWhenNeeded = true;
 
     /*Other options for extra conf:
     BrowseDNSSDSubTypes_subtype
