@@ -1,5 +1,19 @@
 { config, pkgs, inputs, ... }:
 
+let
+  cyberReTheme = pkgs.stdenvNoCC.mkDerivation {
+    pname = "cyberre-grub-theme";
+    version = "1.0";
+
+    src = ./assets/grub_themes/CyberRe/CyberRe;
+
+    installPhase = ''
+      mkdir -p $out
+      cp -r $src/. $out/
+    '';
+  };
+in
+
 {
   imports = [
     ./services
@@ -17,6 +31,7 @@
         efiSupport = true;
         device = "nodev";
         useOSProber = false;
+        theme = cyberReTheme;
       };
     };
   };
