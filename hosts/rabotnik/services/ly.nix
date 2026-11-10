@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs.ly;
     settings = {
-      animation = "doom"; # Options: matrix, doom, colormix, fire, none
+      animation = "none"; # Options: matrix, doom, colormix, fire, none
       bigclock = true;
 
       bg = "0x353c27";

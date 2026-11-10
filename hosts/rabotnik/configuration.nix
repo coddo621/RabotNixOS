@@ -94,18 +94,6 @@
     xwayland.enable = true;
   };
 
-  services.displayManager.ly = {
-    enable = true;
-    settings = {
-      animation = "doom"; # Options: matrix, doom, colormix, fire, none
-      bigclock = true;
-    };
-  };
-
-  environment.systemPackages = with pkgs; [
-    ly
-  ];
-
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
