@@ -6,7 +6,7 @@
     package = pkgs.ly;
     settings = {
       animation = "none"; # Options: matrix, doom, colormix, fire, none
-      bigclock = true;
+      bigclock = "en";
 
       bg = "0x353c27";
       fg = "0xd6d8b8";
@@ -18,6 +18,8 @@
       blank_box = true;
       margin_box_h = 2;
       margin_box_v = 1;
+      full_color = true;
+      save = false;
     };
   };
 }
